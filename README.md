@@ -117,3 +117,6 @@ See LICENSE for more information.<br>
 
 ⭐ ถ้าชอบระบบนี้<br>
 กด ⭐ ที่ repo เพื่อเป็นกำลังใจให้ผู้พัฒนา ❤️<br>
+
+![Dashboard](docs/dashboard.png?update=20251021)
+
