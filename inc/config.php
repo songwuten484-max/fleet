@@ -5,13 +5,13 @@
 define('DB_HOST', '127.0.0.1');
 define('DB_PORT', '3306');
 define('DB_NAME', 'fleetdb');
-define('DB_USER', 'roombookingfba');
-define('DB_PASS', 'gnH!#987*');
+define('DB_USER', 'root');
+define('DB_PASS', '');
 
 // ค่า SSO ให้ตรงกับ console
-define('SSO_CLIENT_ID',    'VjJwIaQaqbZLJSYdfCIjpFpJ8MqpuTDp');             // TODO: แก้เป็นค่าจริง
-define('SSO_CLIENT_SECRET','WSiNj83bEJiRgI3OsqlRfdDpFMooL76NlPnYoyPxD0ytccoOpM7jscAbC29qN1Up'); // ใช้ตอน /token
-define('SSO_REDIRECT_URI', 'https://roombooking.fba.kmutnb.ac.th/FBA_fleet/public/sso_callback.php');
+define('SSO_CLIENT_ID',    '');             // TODO: แก้เป็นค่าจริง
+define('SSO_CLIENT_SECRET',''); // ใช้ตอน /token
+define('SSO_REDIRECT_URI', '');
 define('SSO_AUTH_BASE',    'https://sso.kmutnb.ac.th/auth/authorize');
 define('SSO_TOKEN_URL',    'https://sso.kmutnb.ac.th/auth/token');
 define('SSO_SCOPES',       'profile email');
@@ -57,8 +57,8 @@ if (!defined('SSO_REDIRECT_URI'))  define('SSO_REDIRECT_URI', getenv('SSO_REDIRE
 if (!defined('SSO_SCOPE'))         define('SSO_SCOPE', 'profile email'); // เพิ่ม personnel_info / student_info ได้
 
 /* ---------- LINE Official Account (Messaging API) ---------- */
-if (!defined('LINE_CHANNEL_ACCESS_TOKEN')) define('LINE_CHANNEL_ACCESS_TOKEN', getenv('LINE_CHANNEL_ACCESS_TOKEN') ?: 'kElDU+Y5plL+vDohTottffCVNDt0vgngCy6x6eaOMUVr/styFHa73A5jclbCAmshy67gnPdNsnPWo+iuhULWdQDioSC4Py1a1eNnoY5pjyHLnOgh7MPUvAvpldC+axUp814bYIeyx3DvChyRAaRMcQdB04t89/1O/w1cDnyilFU=');
-if (!defined('LINE_CHANNEL_SECRET'))       define('LINE_CHANNEL_SECRET', getenv('LINE_CHANNEL_SECRET') ?: 'c8ce546194d63978e62308dab1237401');
+if (!defined('LINE_CHANNEL_ACCESS_TOKEN')) define('LINE_CHANNEL_ACCESS_TOKEN', getenv('LINE_CHANNEL_ACCESS_TOKEN') ?: '');
+if (!defined('LINE_CHANNEL_SECRET'))       define('LINE_CHANNEL_SECRET', getenv('LINE_CHANNEL_SECRET') ?: '');
 
 /* ---------- Misc feature flags (ปรับตามนโยบาย) ---------- */
 // ระดับการอนุมัติค่าเริ่มต้น (ระบบปัจจุบันใช้ 1 ขั้น: หัวหน้าสำนักงานคณบดี)
