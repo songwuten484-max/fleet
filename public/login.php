@@ -14,8 +14,8 @@ session_start();
 $state = bin2hex(random_bytes(16));
 $_SESSION['oauth2_state'] = $state;
 
-$clientId     = 'VjJwIaQaqbZLJSYdfCIjpFpJ8MqpuTDp'; // TODO: แทนค่าจริง
-$redirectUri  = 'https://roombooking.fba.kmutnb.ac.th/FBA_fleet/public/sso_callback.php'; // TODO: แก้เป็นของจริง
+$clientId     = ''; // TODO: แทนค่าจริง
+$redirectUri  = ''; // TODO: แก้เป็นของจริง
 $scopes       = 'profile email student_info personnel_info';
 
 $authUrl = sprintf(
