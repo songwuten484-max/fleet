@@ -47,9 +47,9 @@ try {
   unset($_SESSION['oauth2_state']);
 
   /* ---------- ค่าคงที่ SSO (ต้องตรงกับที่ตั้งไว้ใน SSO Console) ---------- */
-  $CLIENT_ID     = getenv('KMUTNB_SSO_CLIENT_ID')     ?: 'VjJwIaQaqbZLJSYdfCIjpFpJ8MqpuTDp';
-  $CLIENT_SECRET = getenv('KMUTNB_SSO_CLIENT_SECRET') ?: 'WSiNj83bEJiRgI3OsqlRfdDpFMooL76NlPnYoyPxD0ytccoOpM7jscAbC29qN1Up';
-  $REDIRECT_URI  = getenv('KMUTNB_SSO_REDIRECT_URI')  ?: 'https://roombooking.fba.kmutnb.ac.th/FBA_fleet/public/sso_callback.php';
+  $CLIENT_ID     = getenv('KMUTNB_SSO_CLIENT_ID')     ?: '';
+  $CLIENT_SECRET = getenv('KMUTNB_SSO_CLIENT_SECRET') ?: '';
+  $REDIRECT_URI  = getenv('KMUTNB_SSO_REDIRECT_URI')  ?: '';
 
   /* ---------- แลก code -> token ---------- */
   $tokenCh = curl_init('https://sso.kmutnb.ac.th/auth/token');
