@@ -1,0 +1,223 @@
+*{
+    box-sizing:border-box
+}
+body{
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    margin:0;
+    background:#f6f7fb;
+    color:#222
+
+}
+.container{
+    max-width:1400px;
+    margin:0 auto;
+    padding:20px
+}
+.nav a{
+    margin-right:8px;
+    text-decoration:none
+}
+button,.btn{
+    background:#0055ff;
+    color:#fff;
+    border:0;
+    padding:10px 14px;
+    border-radius:10px;
+    cursor:pointer
+}
+button.secondary,.btn.secondary{
+    background:#6c757d
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff
+}
+th,td{
+    padding:10px;
+    border-bottom:1px solid #eee;
+    text-align:left
+}
+.card{
+    background:#fff;
+    border-radius:12px;
+    padding:16px;
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
+    margin-bottom:16px
+}
+input,select{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    width:100%
+}
+label{
+    display:block;
+    margin-top:10px
+}
+h1,h2{
+    margin:8px 0 12px
+}
+.flash{
+    background:#eaf6ff;
+    border:1px solid #bfe3ff;
+    padding:10px;
+    border-radius:8px;
+    margin-bottom:12px
+}
+.badge{
+    display:inline-block;
+    padding:4px 8px;
+    border-radius:999px;
+    font-size:12px;
+    background:#eee
+}
+.badge.approved{
+    background:#d1f7d6
+}
+.badge.pending{
+    background:#fde9a8
+}
+.badge.rejected{
+    background:#ffd6d6
+}
+
+.brand--header{
+    display:flex;
+    gap:14px;
+    align-items:center;
+    margin:10px 0 18px
+}
+.brand__logo{
+    width:64px;
+    height:64px;
+    object-fit:contain
+}
+.brand__title{
+    font-weight:800;
+    font-size:22px;
+    line-height:1.1
+}
+.brand__subtitle{
+    font-size:14px;
+    color:#445
+}
+.footer{
+    margin:28px 0 10px;
+    color:#777
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:12px;
+    margin-bottom:16px
+}
+.stat{
+    background:#fff;
+    border-radius:12px;
+    padding:14px;
+    box-shadow:0 2px 10px rgba(0,0,0,.05)
+}
+.stat .label{
+    font-size:12px;
+    color:#666;
+    margin-bottom:8px
+}
+.stat .value{
+    font-size:26px;
+    font-weight:800
+}
+.stat .hint{
+    font-size:12px;
+    color:#888
+}
+
+.kmutnb-badge{
+    display:inline-flex;
+    gap:8px;
+    align-items:center;
+    background:#eef5ff;
+    border:1px solid #cfe2ff;
+    color:#234;
+    padding:6px 10px;
+    border-radius:999px;
+    font-size:12px
+}
+
+.form-brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:12px;
+    padding-bottom:8px;
+    border-bottom:1px dashed #e5e7eb
+}
+.form-brand img{
+    width:36px;
+    height:36px
+}
+.form-brand .fb{
+    font-weight:700;
+    font-size:14px
+}
+.form-brand .uni{
+    font-size:12px;
+    color:#555
+}
+
+.map{
+    height:520px;
+    border-radius:12px;
+    overflow:hidden
+}
+
+.main-nav{
+    display:flex;
+    gap:10px;
+    align-items:center;
+    background:#ffffff;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:10px 12px;
+    margin:0 0 16px;
+    box-shadow:0 2px 10px rgba(0,0,0,.04)
+}
+.main-nav a{
+    display:inline-block;
+    padding:8px 10px;
+    border-radius:8px;
+    text-decoration:none;
+    color:#234;
+    background:#f3f6ff
+}
+.main-nav a.secondary{
+    background:#f1f1f1;
+    color:#333
+}
+.main-nav a:hover{
+    filter:brightness(.97)
+}
+.main-nav .spacer{
+    flex:1
+}
+
+/* spacing & active menu */
+input,select,textarea{
+    margin-top:6px;
+    margin-bottom:12px
+}
+button,.btn{
+    margin-top:8px;
+    margin-right:8px
+}
+.card .nav button{
+    margin-bottom:8px
+}
+.main-nav a.active{
+    background:#0055ff;
+    color:#fff
+}
+.main-nav a{
+    transition:background .15s ease,color .15s ease
+}
