@@ -16,7 +16,7 @@ $state = bin2hex(random_bytes(16));
 $_SESSION['oauth2_state'] = $state;
 
 // ตั้งค่า SSO
-$clientId     = 'VjJwIaQaqbZLJSYdfCIjpFpJ8MqpuTDp';       // <<< ใส่ค่าจริง
+$clientId     = '';       // <<< ใส่ค่าจริง
 $redirectUri  = 'https://roombooking.fba.kmutnb.ac.th/FBA_fleet/public/sso_callback.php'; // <<< ใส่ค่าจริง
 $scopes       = 'profile email student_info personnel_info';
 
